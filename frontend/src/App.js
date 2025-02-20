@@ -33,7 +33,7 @@ function App() {
       {/* Text Input Card */}
       <div className="card shadow mb-4">
         <div className="card-header py-3">
-          <h4 className="m-0 font-weight-bold text-primary">Enter Your Text</h4>
+          <h4 className="m-0 font-weight-bold text-primary">Enter your text</h4>
         </div>
         <div className="card-body">
           <div className="form-group">
