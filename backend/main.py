@@ -5,6 +5,21 @@ from .utils import extract_entities, query_wikidata, query_wikipedia
 
 app = FastAPI()
 
+# Define allowed CORS origins 
+ALLOWED_ORIGINS = [
+    "http://localhost",
+    "http://localhost:3000"
+]  
+
+# Allow CORS so that the frontend can access the API
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=ALLOWED_ORIGINS,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 class TextInput(BaseModel):
     text: str
 
