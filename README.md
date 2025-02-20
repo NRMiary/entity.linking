@@ -48,7 +48,7 @@ entity.linking/
 
    ```bash
    git clone https://github.com/NRMiary/entity.linking.git
-   cd my-project
+   cd entity.linking
   ```
   ---
 
